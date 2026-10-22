@@ -1,0 +1,133 @@
+.detalhesContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--cor-fundo-card);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--cor-sombra);
+}
+
+.cabecalhoDetalhes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  margin: 0;
+  color: var(--cor-texto);
+  font-size: 2rem;
+}
+
+.botaoFavorito {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 0 10px;
+  line-height: 1;
+}
+
+.botaoFavorito:hover {
+  transform: scale(1.2);
+}
+
+.imagemDestaque {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.infoBox {
+  background-color: var(--cor-fundo);
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.infoBox strong {
+  display: block;
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.infoBox p {
+  margin: 0;
+  color: var(--cor-sub-texto);
+  font-weight: bold;
+}
+
+.botaoTicket {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--cor-principal);
+  color: var(--cor-fundo-card);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+.botaoTicket:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+.areaBotoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botaoMapa {
+  flex: 1;
+  display: block;
+  padding: 15px;
+  background-color: white;
+  color: var(--cor-principal);
+  border: 2px solid var(--cor-principal);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.botaoMapa:hover {
+  background-color: ghostwhite;
+}
+
+.botaoTicket {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .areaBotoes {
+    flex-direction: column;
+  }
+}

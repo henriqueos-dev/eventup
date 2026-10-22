@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-sub-texto);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer strong {
+  color: var(--cor-principal);
+}

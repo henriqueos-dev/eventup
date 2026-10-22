@@ -1,0 +1,80 @@
+.paginaInicial {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo {
+  color: darkslategray;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conteudoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.linkCard {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardEvento {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardEvento:hover {
+  transform: translateY(-5px);
+}
+
+.cardImagem {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardCorpo {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardTitulo {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: mediumseagreen;
+}
+
+.cardData {
+  font-size: 0.9rem;
+  color: dimgray;
+  margin-bottom: 5px;
+}
+
+.cardLocal {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+@media (max-width: 768px) {
+  .conteudoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudoGrid {
+    grid-template-columns: 1fr;
+  }
+}

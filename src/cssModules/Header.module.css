@@ -1,0 +1,74 @@
+.header {
+  background-color: var(--cor-fundo-card);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px var(--cor-sombra);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoEmpresa {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.botaoLogin,
+.botaoSair {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, filter 0.2s ease;
+}
+
+.botaoLogin {
+  background-color: var(--cor-principal);
+  color: white;
+}
+
+.botaoLogin:hover {
+  filter: brightness(1.1);
+}
+
+.botaoSair {
+  background-color: transparent;
+  color: slategray;
+  border: 1px solid lightgray;
+}
+
+.botaoSair:hover {
+  background-color: whitesmoke;
+  color: crimson;
+  border-color: crimson;
+}
+
+.areaUsuario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.saudacao {
+  font-weight: bold;
+  color: var(--cor-texto);
+}
